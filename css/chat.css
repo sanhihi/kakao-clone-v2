@@ -1,5 +1,5 @@
 .chats__body {
-  padding: 0;
+  padding: 10px 0px;
 }
 .chats__body .header,
 .chats__body .status-bar {
@@ -13,17 +13,17 @@
   position: fixed;
   bottom: 50px;
   width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fcfcfc;
   padding: 0px 20px;
   border-radius: 40px;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
-    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 .chat__write i {
   font-size: 22px;
@@ -41,10 +41,11 @@
   outline: none;
 }
 .chat__screen .chat__messages {
+  border: 1px solid #f7f7f7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #f7f7f7;
+  justify-content: center;
   padding: 0px 20px;
   padding-top: 30px;
 }
@@ -62,7 +63,6 @@
 .message {
   display: flex;
   align-items: flex-start;
-
   margin-bottom: 20px;
 }
 
@@ -79,15 +79,17 @@
 }
 .message .message__bubble {
   background-color: white;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  display: block;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 20px;
   color: white;
   font-weight: 600;
 }
 .incoming-message .message__author {
-  margin-top: 25px;
+  margin-top: 10px;
   display: block;
   font-weight: 600;
   font-size: 12px;
