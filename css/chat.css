@@ -61,8 +61,9 @@
 }
 .message {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 50%;
+  margin-bottom: 20px;
 }
 .aessage .message__content {
   width: 80%;
@@ -74,13 +75,26 @@
   align-self: flex-end;
 }
 .incoming-message img {
-  width: 30px;
+  width: 40px;
   border-radius: 15px;
-  margin-right: 20px;
+  margin-right: 15px;
 }
 .message__content .message__bubble {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 20px;
+}
+.incoming-message .message__author {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+}
+.incoming-message .message__bubble {
+  border-bottom-left-radius: 0px;
+}
+.sent-message .message__bubble {
+  border-bottom-right-radius: 0px;
 }
