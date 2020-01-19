@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Sans Pro";
+}
+i {
+  cursor: pointer;
+}
+a {
+  all: unset;
+  color: red;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.other-recipe__title h4 {
+  margin: 0;
+  font-weight: 600;
+}
+.other-recipe__title {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.other-recipe__title span {
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.other-recipe__go a {
+  margin-right: 10px;
+}
+
+.phone {
+  width: 300px;
+  height: 600px;
+  background-color: rgb(245, 240, 240);
+  box-shadow: 10px 10px 30px 10px rgb(182, 176, 176),
+    inset 0.1px 0.1px 10px 0.1px rgb(182, 176, 176);
+  padding: 20px 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.screen {
+  background-color: rgb(236, 227, 227);
+  width: 270px;
+  height: 560px;
+
+  position: absolute;
+  padding: 25px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header__title {
+  font-weight: 600;
+}
+
+.popular-recipes__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.recipes__img {
+  width: 130px;
+  height: 75px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.recipes__img:nth-child(1) {
+  background: linear-gradient(
+      to bottom,
+      rgba(231, 221, 221, 0.1),
+      rgb(14, 13, 13) 100%
+    ),
+    url(cook.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.recipes__img:nth-child(2) {
+  background: linear-gradient(
+      to bottom,
+      rgba(231, 221, 221, 0.1),
+      rgb(14, 13, 13) 100%
+    ),
+    url(cook1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.recipes__img:nth-child(3) {
+  background: linear-gradient(
+      to bottom,
+      rgba(231, 221, 221, 0.1),
+      rgb(14, 13, 13) 100%
+    ),
+    url(cook2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.recipes__img:nth-child(4) {
+  background: linear-gradient(
+      to bottom,
+      rgba(231, 221, 221, 0.1),
+      rgb(14, 13, 13) 100%
+    ),
+    url(cook3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.recipes__img:nth-child(2n + 1) {
+  margin-right: 10px;
+}
+
+.recipes__img:nth-child(2n) {
+  margin-bottom: 10px;
+}
+
+.other-recipe {
+  background-color: white;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  font-size: 20px;
+  color: grey;
+}
+
+.nav i:hover {
+  color: red;
+}
