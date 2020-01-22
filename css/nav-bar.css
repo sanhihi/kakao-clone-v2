@@ -32,6 +32,16 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  animation: bspin 1s linear infinite;
+}
+
+@keyframes bspin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateX(1turn);
+  }
 }
 
 @keyframes shownavbar {
